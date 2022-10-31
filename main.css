@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: fit-content;
+  background-image: url(./images/bg-intro-mobile.png);
+  background-color: #ff7a7a;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 3.75rem 1.5rem;
+}
+
+section.description {
+  max-width: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+section.description h1 {
+  font-size: 1.65rem;
+}
+
+section.signing-in-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section.signing-in-form .card {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0px 8px 0px 0px #00000030;
+}
+
+section.signing-in-form .trial-period {
+  padding: 1.5rem 4rem;
+  text-align: center;
+  color: #fff;
+  background-color: #6055a5;
+}
+
+section.signing-in-form .trial-period p span {
+  font-weight: 700;
+}
+
+section.signing-in-form .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+}
+
+section.signing-in-form .form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section.signing-in-form .form-container form input {
+  width: 100%;
+  font-weight: 600;
+  padding: 1.25rem;
+  outline: none;
+  border: 1px solid #b9b6d3;
+  border-radius: 0.5rem;
+}
+
+section.signing-in-form .form-container form input::placeholder {
+  font-weight: 500;
+  color: #3e3c49;
+}
+
+section.signing-in-form .form-container form input:focus {
+  border: 1px solid #6055a5 !important;
+}
+
+section.signing-in-form .form-container form input[type="button"] {
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #38cc8c;
+  border: 1px solid #189e64;
+}
+
+section.signing-in-form .form-container form input[type="button"]:hover,
+section.signing-in-form .form-container form input[type="button"]:focus {
+  background-color: #77e2b4 !important;
+  border: 1px solid #38cc8c !important;
+}
+
+section.signing-in-form .form-container p {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #b9b6d3;
+  padding: 0 1.5rem;
+}
+
+section.signing-in-form .form-container p span {
+  cursor: pointer;
+  font-weight: 700;
+  color: #ff7a7a;
+}
+
+.hide {
+    display: none !important; 
+}
+
+.form-control {
+    position: relative;
+}
+
+.error-icon {
+    position: absolute;
+    top: 2.2vh;
+    right: 2.2vw;
+}
+
+.error-message {
+    text-align: end !important;
+    padding: .5rem 0 !important;
+    color:#ff7a7a !important;
+}
+
+.not-valid {
+    border: 2px solid #ff7a7a !important;
+    color:#ff7a7a !important;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    height: 100vh;
+    background-image: url(./images/bg-intro-desktop.png);
+  }
+  main {
+    width: 100%;
+    flex-direction: row;
+    gap: 4.625rem;
+    padding: 4.875rem 10.3125rem;
+  }
+  section.description {
+    width: 50%;
+    max-width: 100%;
+    text-align: start;
+  }
+  section.description h1 {
+    font-size: 3.05rem;
+  }
+  section.description p {
+    font-size: 1rem;
+  }
+  section.signing-in-form {
+    width: 50%;
+  }
+  section.signing-in-form .form-container {
+    padding: 2.5rem;
+  }
+  section.signing-in-form .form-container form {
+    gap: 1.25rem;
+  }
+  section.signing-in-form .form-container form input{
+    padding-left: 2rem;
+  }
+}
